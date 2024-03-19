@@ -10,12 +10,14 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
-tokio-i3ipc = "0.13.0"
+tokio-i3ipc = "0.16.0"
 tokio = { version = "1.9.0", default-features = false, features = ["rt-multi-thread", "macros", "sync"] }
 anyhow = "1.0.42"
 log = "0.4.14"
 flexi_logger = { version = "0.18.0", default-features = false }
 tokio-stream = "0.1.7"
+serde_json = "1.0"
+jq-rs = { version = "0.4.1", features = ["bundled"] }
 
 [profile.release]
 lto = true
